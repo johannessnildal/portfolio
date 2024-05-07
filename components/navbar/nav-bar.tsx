@@ -9,7 +9,7 @@ import NavBarLinks from './nav-links'
 
 const NavBar = () => {
   return (
-    <header className='w-full py-3 px-12 flex items-center gap-20 justify-between md:justify-evenly sticky backdrop-blur border-b border-zinc-900'>
+    <header className='fixed w-full py-3 px-12 flex items-center gap-20 justify-between md:justify-evenly backdrop-blur border-b border-zinc-900'>
       <div className='flex flex-row justify-center items-center'>
         <Link href='/'>
           <div className='mr-10 py-1.5'>

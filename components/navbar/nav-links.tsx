@@ -141,7 +141,7 @@ const NavBarLinks = () => {
                     {component.description}
                   </ListItem>
                 ))}
-                <ListItem href="/" title="And more..." className='h-full bg-zinc-900'>
+                <ListItem href="/tools" title="And more..." className='h-full bg-zinc-900'>
                   <div className='flex flex-row gap-4'>
                   <p>I use several other tools too. <br />View more by clicking!</p>
                   <ExternalLink size='14' />
