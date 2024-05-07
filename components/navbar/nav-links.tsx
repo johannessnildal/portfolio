@@ -28,7 +28,7 @@ import {
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowBigDownIcon, SquareArrowOutUpRight } from 'lucide-react';
+import { ArrowBigDownIcon, ArrowBigLeftIcon, ArrowBigRightIcon, ArrowBigUpIcon, ExternalLink, List, SquareArrowOutUpRight } from 'lucide-react';
 import { Button } from '../ui/button';
 
 const components: { title: string; href: string; description: string }[] = [
@@ -56,11 +56,6 @@ const components: { title: string; href: string; description: string }[] = [
       title: "Vercel",
       href: "https://vercel.com/",
       description: "Deploying my applications on Vercel is very intuitive with Next.js.",
-    },
-    {
-      title: "And more...",
-      href: "/",
-      description: 'Click here to see more tools i use in my projects.',
     },
   ]
 
@@ -146,6 +141,12 @@ const NavBarLinks = () => {
                     {component.description}
                   </ListItem>
                 ))}
+                <ListItem href="/" title="And more..." className='h-full bg-zinc-900'>
+                  <div className='flex flex-row gap-4'>
+                  <p>I use several other tools too. <br />View more by clicking!</p>
+                  <ExternalLink size='14' />
+                  </div>
+                </ListItem>
               </ul>
             </NavigationMenuLink>
           </NavigationMenuContent>
