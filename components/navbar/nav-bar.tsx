@@ -17,7 +17,7 @@ import {
 
 const NavBar = () => {
   return (
-    <header className='fixed w-full py-3 px-12 flex items-center gap-20 justify-between md:justify-evenly bg-zinc-950 bg-opacity-90 backdrop-blur border-b border-zinc-800'>
+    <header className='fixed w-full py-3 px-12 flex items-center gap-20 justify-between md:justify-evenly bg-zinc-950 bg-opacity-85 backdrop-blur border-b border-zinc-800'>
       <div className='flex flex-row justify-center items-center'>
         <Link href='/'>
           <div className='mr-10 py-1.5'>
