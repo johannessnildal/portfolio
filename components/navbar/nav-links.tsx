@@ -79,7 +79,7 @@ const NavBarLinks = () => {
                       <h1 className='text-sm opacity-20 md:hidden lg:block'>Highlighted Project</h1>
                       <div className="mb-4 mt-auto text-lg font-medium flex flex-row items-center">
                         <Image
-                          src="/icons/logo.svg"
+                          src="/icons/yoomlogo.svg"
                           alt="Portfolio"
                           width={40}
                           height={40}
@@ -96,15 +96,15 @@ const NavBarLinks = () => {
 
                       <AlertDialogContent className='dark'>
                       <AlertDialogHeader>
-                        <AlertDialogTitle>Redirect?</AlertDialogTitle>
+                        <AlertDialogTitle>Alert!</AlertDialogTitle>
                         <AlertDialogDescription>
-                          To access Yoom, you will be redirected to the project page. Continue?
+                          To access Yoom, you will need create an account on the site. This data is kept safe by Clerk Auth, but this is a heads up. Continue?
                         </AlertDialogDescription>
                       </AlertDialogHeader>
                       <AlertDialogFooter>
                         <AlertDialogCancel>Cancel</AlertDialogCancel>
                         <AlertDialogAction asChild>
-                            <Link href='https://yoom-liart-delta.vercel.app' className='gap-2'>
+                            <Link href='https://yoom-liart-delta.vercel.app' className='gap-2' target="_blank">
                               <SquareArrowOutUpRight size='16'/>
                               Continue
                             </Link>
@@ -115,13 +115,13 @@ const NavBarLinks = () => {
 
                 </NavigationMenuLink>
               </li>
-                <ListItem href="https://johannessnildal.github.io/manage-landing-page/" title="Manage">        
+                <ListItem href="https://johannessnildal.github.io/manage-landing-page/" title="Manage" target="_blank">        
                   Just a landing page as part of a challenge from Frontend Mentor.
                 </ListItem>
-              <ListItem href="/" title="Coming soon...">
+              <ListItem href="/" title="Coming soon..." target="_blank">
                 As i complete more projects, they will be added here.
               </ListItem>
-              <ListItem href="/" title="Coming soon...">
+              <ListItem href="/" title="Coming soon..." target="_blank">
                 As i complete more projects, they will be added here.
               </ListItem>
             </ul>
@@ -137,6 +137,7 @@ const NavBarLinks = () => {
                     key={component.title}
                     title={component.title}
                     href={component.href}
+                    target="_blank"
                   >
                     {component.description}
                   </ListItem>

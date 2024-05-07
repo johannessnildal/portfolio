@@ -11,7 +11,7 @@ const HomePage = () => {
       <div className="flex flex-row items-center justify-center text-center gap-2 pt-6">
         <h1 className="font-bold">Yoom</h1>
         <Image 
-          src="/icons/logo.svg"
+          src="/icons/yoomlogo.svg"
           alt="yoom"
           width={32}
           height={30}
