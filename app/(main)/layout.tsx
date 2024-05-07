@@ -6,9 +6,7 @@ const Mainlayout = ({ children }: { children: ReactNode }) => {
   return (
     <main>
         <NavBar />
-          <div className='pt-20'>
-            {children}
-          </div>
+        {children}
         <Footer />
     </main>
   )
