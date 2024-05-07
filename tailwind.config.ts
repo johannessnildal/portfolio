@@ -52,6 +52,10 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        yoomproject: {
+          DEFAULT: "hsl(var(--yoomproject))",
+          foreground: "hsl(var(--yoomproject-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
