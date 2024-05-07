@@ -7,9 +7,17 @@ import { Github, Mail } from 'lucide-react'
 import MobileNavBar from './mobile-nav-bar'
 import NavBarLinks from './nav-links'
 
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
+
+
 const NavBar = () => {
   return (
-    <header className='fixed w-full py-3 px-12 flex items-center gap-20 justify-between md:justify-evenly backdrop-blur border-b border-zinc-900'>
+    <header className='fixed w-full py-3 px-12 flex items-center gap-20 justify-between md:justify-evenly bg-zinc-950 bg-opacity-90 backdrop-blur border-b border-zinc-800'>
       <div className='flex flex-row justify-center items-center'>
         <Link href='/'>
           <div className='mr-10 py-1.5'>
@@ -21,26 +29,46 @@ const NavBar = () => {
 
       <div className='hidden md:block'>
         <div className='flex flex-row gap-4'>
-          <Button
-            asChild 
-            className='dark'
-            variant='outline'
-          >
-            <Link className='gap-2' href='mailto:johannessnildal@gmail.com'>
-              <Mail size='16' />
-              <p>Contact Me</p>
-            </Link>
-          </Button>
-          <Button
-            asChild 
-            variant='default'
-            className='dark'
-          >
-            <Link className='gap-2' href='https://github.com/johannessnildal' target="_blank">
-            <Github size='16'/>
-              <p>Github</p>
-            </Link>
-          </Button>
+          
+        <TooltipProvider>
+            <Tooltip>
+              <Button
+                asChild 
+                className='dark'
+                variant='outline'
+              >
+                <TooltipTrigger>
+                  <Link className='gap-2 flex flex-row items-center' href='mailto:johannessnildal@gmail.com'>
+                    <Mail size='16' />
+                    <p>Contact Me</p>
+                  </Link>
+                </TooltipTrigger>
+              </Button>
+              <TooltipContent className='dark'>
+                <p>Send me an email to get in touch</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+          
+          <TooltipProvider>
+            <Tooltip>
+              <Button
+                asChild 
+                variant='default'
+                className='dark'
+              >
+                <TooltipTrigger>
+                  <Link className='gap-2 flex flex-row items-center' href='https://github.com/johannessnildal' target="_blank">
+                  <Github size='16'/>
+                    <p>Github</p>
+                  </Link>
+                </TooltipTrigger>
+              </Button>
+              <TooltipContent>
+                <p>Check out my work on Github</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         </div>
       </div>
 
