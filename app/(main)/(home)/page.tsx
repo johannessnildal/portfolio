@@ -80,7 +80,7 @@ const HomePage = () => {
           className='dark text-white'
           variant='outline'
           >
-          <Link className='gap-2 flex flex-row items-center' href='/'>
+          <Link className='gap-2 flex flex-row items-center' href='/projects'>
             <p>My Projects</p>
             <Earth size="16" />
           </Link>

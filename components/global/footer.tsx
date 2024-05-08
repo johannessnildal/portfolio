@@ -1,6 +1,7 @@
 import { Github, Mail } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
+import { Button } from '../ui/button'
 
 const Footer = () => {
   return (
@@ -25,9 +26,13 @@ const Footer = () => {
 
       <div className='w-[50vw] self-center border-t border-zinc-900 mt-14'></div>
 
-      <div className='flex flex-row items-center justify-center gap-10 pt-10'>
-        <Link href='https://github.com/johannessnildal' target='blank'><Github size={24}/></Link>
-        <Link href='mailto:johannessnildal@gmail.com'><Mail size={24}/></Link>
+      <div className='flex flex-row items-center justify-center gap-4 pt-10'>
+        <Button className='dark rounded-full mx-0' variant='outline'>
+          <Link href='https://github.com/johannessnildal' target='blank'><Github size={24}/></Link>
+        </Button>
+        <Button className='dark rounded-full mx-0' variant='outline'>
+          <Link href='mailto:johannessnildal@gmail.com'><Mail size={24}/></Link>
+        </Button>
       </div>
 
       <div className='text-center'>
