@@ -49,8 +49,10 @@ const MobileNavBar = () => {
                   Manage
                 </Link>
               </li>
-              <li className='text-sm opacity-40'>
-                  More coming...
+              <li className='text-sm'>
+                <Link href='/projects'>
+                  View all
+                </Link>
               </li>
             </ul>
           </PopoverContent>
@@ -88,7 +90,7 @@ const MobileNavBar = () => {
               </li>
               <li className='text-sm active:opacity-100'>
                 <Link href='/tools'>
-                  More...
+                  View all
                 </Link>
               </li>
             </ul>

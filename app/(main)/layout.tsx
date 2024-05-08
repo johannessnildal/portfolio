@@ -10,6 +10,7 @@ const Mainlayout = ({ children }: { children: ReactNode }) => {
         <div className='relative'>
           <NavBar />
           {children}
+          <Footer />
         </div>
     </main>
   )
