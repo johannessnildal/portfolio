@@ -61,7 +61,7 @@ const components: { title: string; href: string; description: string }[] = [
 
 const NavBarLinks = () => {
   return (
-    <div className='hidden md:block'>
+    <div className='hidden md:block z-50'>
     <NavigationMenu className='dark'>
       <NavigationMenuList>
         <NavigationMenuItem>

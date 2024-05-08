@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 const HomePage = () => {
   return (
     <section className="w-full h-screen">
-      <div className="flex flex-row items-center justify-center text-center gap-2 pt-6">
+      <div className="flex flex-row items-center justify-center text-center gap-1 sm:gap-2 pt-6">
         <h1 className="font-bold">Yoom</h1>
         <Image 
           src="/icons/yoomlogo.svg"
@@ -25,20 +25,24 @@ const HomePage = () => {
           <p className="font-normal text-sm">Stream</p>
         </div>
         <div className="px-5 flex sm:hidden flex-row gap-1">
-          <p className="font-extralight text-sm">My latest project using</p>
+          <p className="font-extralight text-sm">Latest</p>
           <p className="font-normal text-sm">Next.js</p>
+          <p className="font-extralight text-sm">project</p>
         </div>
         <Button className="dark rounded-full px-6">
-          <Link className="flex flex-row gap-2 items-center" href="https://yoom-liart-delta.vercel.app">
+          <Link className="flex flex-row gap-1 sm:gap-2 items-center" href="https://yoom-liart-delta.vercel.app">
             View
             <ArrowRight size="16" />
           </Link>
         </Button>
       </div>
 
-      <div className={'text-center pt-[50px] sm:pt-[80px] md:pt-[120px] flex flex-col gap-10'}>
-        <h1 className='inline-block h-fit text-transparent bg-clip-text bg-gradient-to-b from-muted to-muted/70 font-black text-5xl sm:text-6xl md:text-7xl lg:text-8xl italic'>I am an aspiring <br /> full-stack web developer.</h1>
+      <div className={'text-center pt-[50px] sm:pt-[80px] md:pt-[120px] flex flex-col'}>
+        <h1 className='font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl'>
+          I create meaningful
+        </h1>
       </div>
+
     </section>
   )
 }

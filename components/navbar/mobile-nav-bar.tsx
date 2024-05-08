@@ -21,14 +21,14 @@ import Link from 'next/link'
 
 const MobileNavBar = () => {
   return (
-    <div className='block md:hidden lg:hidden'>
+    <div className='block md:hidden lg:hidden z-50'>
     <Sheet>
       <SheetTrigger asChild className='dark'>
         <Button variant='outline'>
           <Menu size='24' />
         </Button>
       </SheetTrigger>
-      <SheetContent className='dark w-[380px]' side='left'>
+      <SheetContent className='dark w-[300px] sm:w-[400px]' side='left'>
         <SheetHeader className='flex items-center'>
           <SheetTitle className='mt-5 tracking-tight font-extrabold text-xl'>Johannes</SheetTitle>
         </SheetHeader>
