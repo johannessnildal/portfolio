@@ -124,7 +124,7 @@ const NavBarLinks = () => {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className='opacity-70 hover:opacity-100 duration-300 ease-in-out font-light'>Tools</NavigationMenuTrigger>
+          <NavigationMenuTrigger className='opacity-70 hover:opacity-100 duration-300 ease-in-out font-light'>Tech</NavigationMenuTrigger>
           <NavigationMenuContent>
             <NavigationMenuLink>
               <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
