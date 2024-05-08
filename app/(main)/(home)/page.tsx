@@ -49,17 +49,11 @@ const HomePage = () => {
       <div className={'text-center pt-[50px] sm:pt-[80px] md:pt-[120px] flex flex-col gap-3'}>
         <TooltipProvider>
           <Tooltip>
-            <TooltipTrigger className="hidden md:block">
+            <TooltipTrigger>
               <div className="flex flex-row gap-2 text-center justify-center items-center">
-                <p className="font-bold text-md inline-block h-fit text-transparent bg-clip-text bg-gradient-to-b from-muted/60 to-muted/30">
+                <Link href='https://github.com/johannessnildal' className="font-bold text-md inline-block h-fit text-transparent bg-clip-text bg-gradient-to-b from-muted/60 to-muted/30" target="blank">
                   @johannessnildal
-                </p>
-                  <div className="hidden lg:flex flex-row gap-1 justify-center items-center pl-3">
-                    <ArrowLeft size="14" className="opacity-30"/>
-                    <p className="text-md font-light text-white opacity-30">
-                      hover me
-                    </p>
-                  </div>
+                </Link>
               </div>
             </TooltipTrigger>
             <TooltipContent className="dark">
