@@ -20,7 +20,7 @@ import {
 const HomePage = () => {
   return (
     <section className="w-full h-full">
-      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{delay: 1, duration: 1}}>
+      <motion.div initial={{ opacity: 0 }} animate={{opacity: 1}} transition={{ delay: 1, duration: 1}}>
         <div className="flex flex-row items-center justify-center text-center gap-1 sm:gap-2">
           <h1 className="font-bold">Yoom</h1>
           <Image 
@@ -51,7 +51,7 @@ const HomePage = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 0.5}}>
+      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 0.7}}>
         <div className={'text-center pt-[50px] sm:pt-[80px] md:pt-[120px] flex flex-col gap-3'}>
           <TooltipProvider>
             <Tooltip>
@@ -106,7 +106,7 @@ const HomePage = () => {
         </div>
       </motion.div>
 
-      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 0.2}}>
+      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 0.4}}>
         <div className="flex justify-center pt-16 sm:pt-20 relative overflow-hidden">
             <Image 
               src="/images/yoom-tn.png"
