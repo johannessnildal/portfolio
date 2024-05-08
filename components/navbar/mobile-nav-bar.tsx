@@ -63,32 +63,32 @@ const MobileNavBar = () => {
           </PopoverTrigger>
           <PopoverContent className='dark w-[200px]'>
             <ul className='flex flex-col gap-3 justify-center items-center'>
-            <li className='text-sm opacity-70 active:opacity-100'>
+            <li className='text-sm opacity-70'>
                 <Link href='https://nextjs.org/' target='blank'>
                   Next.js
                 </Link>
               </li>
-              <li className='text-sm opacity-70 active:opacity-100'>
+              <li className='text-sm opacity-70'>
                 <Link href='https://tailwindcss.com/' target='blank'>
                   Tailwind
                 </Link>
               </li>
-              <li className='text-sm opacity-70 active:opacity-100'>
+              <li className='text-sm opacity-70'>
                 <Link href='https://ui.shadcn.com/' target='blank'>
                   Shadcn/ui
                 </Link>
               </li>
-              <li className='text-sm opacity-70 active:opacity-100'>
+              <li className='text-sm opacity-70'>
                 <Link href='https://www.mongodb.com/' target='blank'>
                   MongoDB
                 </Link>
               </li>
-              <li className='text-sm opacity-70 active:opacity-100'>
+              <li className='text-sm opacity-70'>
                 <Link href='https://vercel.com/' target='blank'>
                   Vercel
                 </Link>
               </li>
-              <li className='text-sm active:opacity-100'>
+              <li className='text-sm'>
                 <Link href='/tools'>
                   View all
                 </Link>
