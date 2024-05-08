@@ -117,8 +117,11 @@ const NavBarLinks = () => {
               <ListItem href="/" title="Coming soon..." target="_blank">
                 As i complete more projects, they will be added here.
               </ListItem>
-              <ListItem href="/" title="Coming soon..." target="_blank">
-                As i complete more projects, they will be added here.
+              <ListItem href="/projects" title="And more..." className='bg-zinc-900'>
+                <div className='flex flex-row gap-4'>
+                  <p>View all my projects <br />by clicking here!</p>
+                  <ExternalLink size='14' />
+                </div>
               </ListItem>
             </ul>
           </NavigationMenuContent>
@@ -140,8 +143,8 @@ const NavBarLinks = () => {
                 ))}
                 <ListItem href="/tools" title="And more..." className='h-full bg-zinc-900'>
                   <div className='flex flex-row gap-4'>
-                  <p>I use several other tools too. <br />View more by clicking!</p>
-                  <ExternalLink size='14' />
+                    <p>I use several other tools too. <br />View more by clicking here!</p>
+                    <ExternalLink size='14' />
                   </div>
                 </ListItem>
               </ul>
