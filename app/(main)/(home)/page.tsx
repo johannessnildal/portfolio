@@ -4,6 +4,7 @@ import Image from "next/image"
 import { ArrowRight, SquareArrowOutUpRight } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import DescriptionCarousel from "@/components/hero-descriptions"
 
 const HomePage = () => {
   return (
@@ -30,16 +31,21 @@ const HomePage = () => {
           <p className="font-extralight text-sm">project</p>
         </div>
         <Button className="dark rounded-full px-6">
-          <Link className="flex flex-row gap-1 sm:gap-2 items-center" href="https://yoom-liart-delta.vercel.app">
+          <Link className="flex flex-row gap-1 sm:gap-2 items-center" href="https://yoom-liart-delta.vercel.app" target="blank">
             View
             <ArrowRight size="16" />
           </Link>
         </Button>
       </div>
 
-      <div className={'text-center pt-[50px] sm:pt-[80px] md:pt-[120px] flex flex-col'}>
-        <h1 className='font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl'>
+      <div className={'text-center pt-[50px] sm:pt-[80px] md:pt-[120px] flex flex-col gap-3'}>
+        <h1 className='font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl'>
           I create meaningful
+        </h1>
+        <h1>
+          <span className='font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-zinc-400'>
+            <DescriptionCarousel />
+          </span>
         </h1>
       </div>
 
