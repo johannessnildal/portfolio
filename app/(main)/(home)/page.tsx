@@ -70,11 +70,11 @@ const HomePage = () => {
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
-          <h1 className='font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl'>
+          <h1 className='font-extrabold font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl'>
             I create meaningful
           </h1>
           <h1>
-            <span className='font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl'>
+            <span className='font-normal font-serif text-zinc-500 text-2xl sm:text-3xl md:text-4xl lg:text-5xl'>
               <DescriptionCarousel />
             </span>
           </h1>
