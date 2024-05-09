@@ -16,7 +16,9 @@ const Footer = () => {
       <section className='w-full h-fit bg-black border-t border-zinc-800 flex flex-col'>
         <div className='flex flex-col sm:flex-row justify-center pt-6 gap-10 sm:gap-[10vw] md:gap-[15vw] lg:gap-[30vw] xl:gap-[25vw] 2xl:gap-[20vw]'>
           <div className='flex flex-col gap-2'>
-            <h1 className='font-extrabold text-xl tracking-tight text-center sm:text-left'>Johannes</h1>
+            <Link href='/'>
+              <h1 className='font-extrabold font-serif text-xl text-center sm:text-left underline underline-offset-4 decoration-zinc-400 hover:decoration-white decoration-dotted duration-300 ease-in-out'>JohannesS.</h1>
+            </Link>
             <p className='text-sm font-light text-zinc-400 text-center sm:text-left'>Welcome to my portfolio, showcasing <br /> my projects and the tools i use!</p>
           </div>
           <div className='flex flex-col text-center sm:text-left sm:flex-row gap-10 sm:gap-[100px] md:gap-[140px]'>

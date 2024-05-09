@@ -21,7 +21,7 @@ const NavBar = () => {
       <div className='flex flex-row justify-center items-center'>
         <Link href='/'>
           <div className='mr-10 py-1.5'>
-            <h1 className='font-extrabold text-xl tracking-tight'>Johannes</h1>
+            <h1 className='font-extrabold font-serif text-xl underline underline-offset-4 decoration-zinc-400 hover:decoration-white decoration-dotted duration-300 ease-in-out'>JohannesS.</h1>
           </div>
         </Link>
         <NavBarLinks />
