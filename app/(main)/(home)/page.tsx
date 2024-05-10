@@ -107,16 +107,16 @@ const HomePage = () => {
       </motion.div>
 
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 0.4}}>
-        <div className="flex justify-center pt-16 sm:pt-20 relative overflow-hidden">
+        <div className="pt-16 sm:pt-20 relative overflow-hidden">
             <Image 
               src="/images/yoom-tn.png"
               alt="hero-image"
               width={1500}
               height={780}
-              className="rounded-xl opacity-50 border-solid border-[1px] border-zinc-700 object-cover"
+              className="mx-auto rounded-xl opacity-50 border-solid border-[1px] border-zinc-700 object-cover z-1"
               priority
             ></Image>
-          <div className="absolute inset-0 bg-gradient-to-t from-black from-2% z-1" />
+          <div className="absolute overflow-hidden inset-0 bg-gradient-to-t from-black from-2% z-1" />
         </div>
       </motion.div>
 
