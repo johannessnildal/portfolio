@@ -16,7 +16,6 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"
 
-
 const HomePage = () => {
   return (
     <section className="w-full h-full">
