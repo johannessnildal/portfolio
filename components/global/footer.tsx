@@ -3,7 +3,7 @@ import React from 'react'
 import { Button } from '../ui/button'
 
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { SiMongodb, SiShadcnui, SiVercel } from "react-icons/si";
+import { SiMongodb, SiVercel } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 

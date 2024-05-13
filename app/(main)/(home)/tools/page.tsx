@@ -1,13 +1,13 @@
-import { Button } from '@/components/ui/button'
 import React from 'react'
-import { RiNextjsFill, RiNextjsLine, RiTailwindCssFill } from 'react-icons/ri'
+
+import { RiNextjsLine, RiTailwindCssFill } from 'react-icons/ri'
 import { SiAppwrite, SiClerk, SiCss3, SiDjango, SiExpress, SiHtml5, SiJavascript, SiMongodb, SiPython, SiReact, SiShadcnui, SiVercel } from 'react-icons/si'
 
 const ToolsPage = () => {
   return (
     <section>
       <div className='text-center flex flex-col gap-2'>
-        <h1 className='font-extrabold font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl'>Tools</h1>
+        <h1 className='font-extrabold font-serif text-5xl md:text-6xl lg:text-7xl'>Tools</h1>
         <p className='text-zinc-400 font-light text-md md:text-lg lg:text-xl'>Tools I use to create beautiful, dynamic websites.</p>
       </div>
 
@@ -67,7 +67,7 @@ const ToolsPage = () => {
           <div className='w-[350px] h-[100px] border-zinc-800 border-[1px] rounded-lg bg-zinc-950 hover:bg-zinc-900 duration-100 hover:cursor-pointer ease-in-out'>
             <div className='flex flex-col gap-1 pt-5 text-center'>
               <div className='flex flex-row items-center text-center justify-center gap-2'><SiExpress size={30}/> <h1 className='text-2xl font-bold leading-tight'>Express</h1></div>
-              <p className='text-sm text-zinc-400'>JavaScript Framework</p>
+              <p className='text-sm text-zinc-400'>Node.js Framework</p>
             </div>
           </div>
         </div>
