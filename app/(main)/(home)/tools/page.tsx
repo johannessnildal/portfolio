@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { RiNextjsLine, RiTailwindCssFill } from 'react-icons/ri'
-import { SiAppwrite, SiClerk, SiCss3, SiDjango, SiExpress, SiHtml5, SiJavascript, SiMongodb, SiPython, SiReact, SiShadcnui, SiVercel } from 'react-icons/si'
+import { SiAppwrite, SiClerk, SiCss3, SiDjango, SiExpress, SiHtml5, SiJavascript, SiMongodb, SiPython, SiReact, SiShadcnui, SiSupabase, SiVercel } from 'react-icons/si'
 
 const ToolsPage = () => {
   return (
@@ -17,19 +17,19 @@ const ToolsPage = () => {
         <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6'>
           <div className='w-[350px] h-[100px] border-zinc-800 border-[1px] rounded-lg bg-zinc-950 hover:bg-zinc-900 duration-100 hover:cursor-pointer ease-in-out'>
             <div className='flex flex-col gap-1 pt-5 text-center'>
-              <div className='flex flex-row items-center text-center justify-center gap-2'><SiHtml5 size={24}/><SiCss3 size={24}/> <h1 className='text-2xl font-bold leading-tight'>HTML & CSS</h1></div>
+              <div className='flex flex-row items-center text-center justify-center gap-2'><SiHtml5 size={22}/><SiCss3 size={22}/> <h1 className='text-2xl font-bold leading-tight'>HTML & CSS</h1></div>
               <p className='text-sm text-zinc-400'>The basics</p>
             </div>
           </div>
           <div className='w-[350px] h-[100px] border-zinc-800 border-[1px] rounded-lg bg-zinc-950 hover:bg-zinc-900 duration-100 hover:cursor-pointer ease-in-out'>
             <div className='flex flex-col gap-1 pt-5 text-center'>
-              <div className='flex flex-row items-center text-center justify-center gap-2'><SiJavascript size={24}/> <h1 className='text-2xl font-bold leading-tight'>Javascript</h1></div>
+              <div className='flex flex-row items-center text-center justify-center gap-2'><SiJavascript size={22}/> <h1 className='text-2xl font-bold leading-tight'>Javascript</h1></div>
               <p className='text-sm text-zinc-400'>The best and worst language ever created</p>
             </div>
           </div>
           <div className='w-[350px] h-[100px] border-zinc-800 border-[1px] rounded-lg bg-zinc-950 hover:bg-zinc-900 duration-100 hover:cursor-pointer ease-in-out'>
             <div className='flex flex-col gap-1 pt-5 text-center'>
-              <div className='flex flex-row items-center text-center justify-center gap-2'><SiPython size={24}/> <h1 className='text-2xl font-bold leading-tight'>Python</h1></div>
+              <div className='flex flex-row items-center text-center justify-center gap-2'><SiPython size={22}/> <h1 className='text-2xl font-bold leading-tight'>Python</h1></div>
               <p className='text-sm text-zinc-400'>Great multi-use language, also for web dev!</p>
             </div>
           </div>
@@ -42,13 +42,13 @@ const ToolsPage = () => {
         <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6'>
           <div className='w-[350px] h-[100px] border-zinc-800 border-[1px] rounded-lg bg-zinc-950 hover:bg-zinc-900 duration-100 hover:cursor-pointer ease-in-out'>
             <div className='flex flex-col gap-1 pt-5 text-center'>
-              <div className='flex flex-row items-center text-center justify-center gap-2'><SiReact size={24}/> <h1 className='text-2xl font-bold leading-tight'>React</h1></div>
+              <div className='flex flex-row items-center text-center justify-center gap-2'><SiReact size={26}/> <h1 className='text-2xl font-bold leading-tight'>React</h1></div>
               <p className='text-sm text-zinc-400'>JavaScript Framework</p>
             </div>
           </div>
           <div className='w-[350px] h-[100px] border-zinc-800 border-[1px] rounded-lg bg-zinc-950 hover:bg-zinc-900 duration-100 hover:cursor-pointer ease-in-out'>
             <div className='flex flex-col gap-1 pt-5 text-center'>
-              <div className='flex flex-row items-center text-center justify-center gap-2'><SiDjango size={24}/> <h1 className='text-2xl font-bold leading-tight'>Django</h1></div>
+              <div className='flex flex-row items-center text-center justify-center gap-2'><SiDjango size={26}/> <h1 className='text-2xl font-bold leading-tight'>Django</h1></div>
               <p className='text-sm text-zinc-400'>Python Framework</p>
             </div>
           </div>
@@ -66,7 +66,7 @@ const ToolsPage = () => {
           </div>
           <div className='w-[350px] h-[100px] border-zinc-800 border-[1px] rounded-lg bg-zinc-950 hover:bg-zinc-900 duration-100 hover:cursor-pointer ease-in-out'>
             <div className='flex flex-col gap-1 pt-5 text-center'>
-              <div className='flex flex-row items-center text-center justify-center gap-2'><SiExpress size={30}/> <h1 className='text-2xl font-bold leading-tight'>Express</h1></div>
+              <div className='flex flex-row items-center text-center justify-center gap-2'><SiExpress size={28}/> <h1 className='text-2xl font-bold leading-tight'>Express</h1></div>
               <p className='text-sm text-zinc-400'>Node.js Framework</p>
             </div>
           </div>
@@ -77,6 +77,12 @@ const ToolsPage = () => {
 
       <div className='flex justify-center pt-3'>
         <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6'>
+        <div className='w-[350px] h-[100px] border-zinc-800 border-[1px] rounded-lg bg-zinc-950 hover:bg-zinc-900 duration-100 hover:cursor-pointer ease-in-out'>
+            <div className='flex flex-col gap-1 pt-5 text-center'>
+              <div className='flex flex-row items-center text-center justify-center gap-2'><SiSupabase size={24}/> <h1 className='text-2xl font-bold leading-tight'>Supabase</h1></div>
+              <p className='text-sm text-zinc-400'>Full backend</p>
+            </div>
+          </div>
           <div className='w-[350px] h-[100px] border-zinc-800 border-[1px] rounded-lg bg-zinc-950 hover:bg-zinc-900 duration-100 hover:cursor-pointer ease-in-out'>
             <div className='flex flex-col gap-1 pt-5 text-center'>
               <div className='flex flex-row items-center text-center justify-center gap-2'><SiMongodb size={30}/> <h1 className='text-2xl font-bold leading-tight'>MongoDB</h1></div>
