@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaDatabase } from 'react-icons/fa'
 
 import { RiNextjsLine, RiTailwindCssFill } from 'react-icons/ri'
 import { SiAppwrite, SiClerk, SiCss3, SiDjango, SiExpress, SiHtml5, SiJavascript, SiMongodb, SiPython, SiReact, SiShadcnui, SiSupabase, SiVercel } from 'react-icons/si'
@@ -30,7 +31,13 @@ const ToolsPage = () => {
           <div className='w-[350px] h-[100px] border-zinc-800 border-[1px] rounded-lg bg-zinc-950 hover:bg-zinc-900 duration-100 hover:cursor-pointer ease-in-out'>
             <div className='flex flex-col gap-1 pt-5 text-center'>
               <div className='flex flex-row items-center text-center justify-center gap-2'><SiPython size={22}/> <h1 className='text-2xl font-bold leading-tight'>Python</h1></div>
-              <p className='text-sm text-zinc-400'>Great multi-use language, also for web dev!</p>
+              <p className='text-sm text-zinc-400'>A great multi-use language</p>
+            </div>
+          </div>
+          <div className='w-[350px] h-[100px] border-zinc-800 border-[1px] rounded-lg bg-zinc-950 hover:bg-zinc-900 duration-100 hover:cursor-pointer ease-in-out'>
+            <div className='flex flex-col gap-1 pt-5 text-center'>
+              <div className='flex flex-row items-center text-center justify-center gap-2'><FaDatabase size={22}/> <h1 className='text-2xl font-bold leading-tight'>SQL</h1></div>
+              <p className='text-sm text-zinc-400'>Used to easily manage databases</p>
             </div>
           </div>
         </div>
