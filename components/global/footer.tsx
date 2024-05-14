@@ -30,7 +30,7 @@ const Footer = () => {
                 My Projects
               </Link>
               <Link href='https://yoom-liart-delta.vercel.app/' target='blank' className='w-fit flex self-center'>
-                <div className='bg-zinc-950 hover:bg-zinc-800 duration-100 ease-in-out rounded-md border-solid border-[1px] border-zinc-700'>
+                <div className='bg-zinc-950 hover:bg-zinc-800 duration-100 ease-in-out rounded-md border-solid border-[1px] border-zinc-900'>
                   <div className='flex flex-row gap-3 items-center justify-start px-4 py-2'>
                     <Image src={YoomLogo} width={26} height={26} alt='Yoom'/>
                     <h1 className='text-sm'>Yoom</h1>
