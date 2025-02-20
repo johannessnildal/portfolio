@@ -16,7 +16,7 @@ import {
   } from "@/components/ui/popover"
 
 import { Button } from '../ui/button'
-import { Mail, Menu } from 'lucide-react'
+import { Github, Mail, Menu } from 'lucide-react'
 import Link from 'next/link'
 
 const MobileNavBar = () => {
@@ -33,6 +33,9 @@ const MobileNavBar = () => {
           <SheetTitle className='mt-5 tracking-tight font-extrabold text-xl'>Johannes</SheetTitle>
         </SheetHeader>
       <div className='flex flex-col gap-8 mt-10 items-center justify-center'>
+        <Link href='/about'>
+          <Button variant='link'>About me</Button>
+        </Link>
         <Popover>
           <PopoverTrigger>
             <Button variant='link'>Projects</Button>
@@ -97,13 +100,19 @@ const MobileNavBar = () => {
           </PopoverContent>
         </Popover>
       </div>
-      <div className='absolute inset-x-0 bottom-[10vh] flex items-center justify-center'>
-        <Button asChild className='dark m-auto' variant='outline'>
-          <Link className='gap-2' href='mailto:johannessnildal@gmail.com'>
-            <Mail size='16' />
-            <p>Contact Me</p>
-          </Link>
-        </Button>
+      <div className='flex flex-col gap-4 mt-24 items-center justify-center'>
+          <Button asChild className='dark m-auto' variant='outline'>
+            <Link className='gap-2' href='mailto:johannessnildal@gmail.com'>
+              <Mail size='16' />
+              <p>Contact Me</p>
+            </Link>
+          </Button>
+          <Button asChild className='dark m-auto' variant='default'>
+            <Link className='gap-2' href='https://github.com/johannessnildal'>
+              <Github size='16' />
+              <p>Contact Me</p>
+            </Link>
+          </Button>
       </div>
       </SheetContent>
     </Sheet>    
