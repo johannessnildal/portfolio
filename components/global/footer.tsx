@@ -61,7 +61,7 @@ const Footer = () => {
             <Link href='https://github.com/johannessnildal' target='blank'><FaGithub size='22'/></Link>
           </Button>
           <Button className='dark rounded-full mx-0' variant='outline'>
-            <Link href='mailto:johannessnildal@gmail.com'><MdEmail size='22'/></Link>
+            <Link href='mailto:johannes.snildal@gmail.com'><MdEmail size='22'/></Link>
           </Button>
         </div>
 

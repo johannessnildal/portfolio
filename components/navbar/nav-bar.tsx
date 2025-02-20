@@ -17,11 +17,16 @@ import {
 
 const NavBar = () => {
   return (
-    <header className='w-full py-3 px-12 flex items-center gap-20 justify-between md:justify-evenly bg-zinc-950 bg-opacity-85 backdrop-blur border-b border-zinc-800'>
-      <div className='flex flex-row justify-center items-center'>
+    <header className='w-full py-3 px-12 flex items-center gap-10 lg:gap-20 justify-between md:justify-evenly bg-zinc-950 bg-opacity-85 backdrop-blur border-b border-zinc-800'>
+      <div className='flex flex-row gap-5 justify-center items-center'>
         <Link href='/'>
           <div className='mr-10 py-1.5'>
             <h1 className='font-extrabold font-serif text-xl underline underline-offset-4 decoration-zinc-400 hover:decoration-white decoration-dotted duration-300 ease-in-out'>JohannesS.</h1>
+          </div>
+        </Link>
+        <Link href='/about'>
+          <div className='hidden md:block opacity-70 hover:opacity-100 duration-300 ease-in-out font-light'>
+            <h1 className='text-sm'>About Me</h1>
           </div>
         </Link>
         <NavBarLinks />
@@ -38,9 +43,9 @@ const NavBar = () => {
                 variant='outline'
               >
                 <TooltipTrigger>
-                  <Link className='gap-2 flex flex-row items-center' href='mailto:johannessnildal@gmail.com'>
+                  <Link className='gap-2 flex flex-row items-center' href='mailto:johannes.snildal@gmail.com'>
                     <Mail size='16' />
-                    <p>Contact Me</p>
+                    <p className='hidden lg:block'>Contact Me</p>
                   </Link>
                 </TooltipTrigger>
               </Button>
@@ -60,7 +65,7 @@ const NavBar = () => {
                 <TooltipTrigger>
                   <Link className='gap-2 flex flex-row items-center' href='https://github.com/johannessnildal' target="_blank">
                   <Github size='16'/>
-                    <p>Github</p>
+                    <p className='hidden lg:block'>Github</p>
                   </Link>
                 </TooltipTrigger>
               </Button>
