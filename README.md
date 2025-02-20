@@ -6,3 +6,4 @@
 - #### Typescript (React)
 - #### [Tailwindcss](https://tailwindui.com/) - For styling
 - #### [shadcn/ui](https://ui.shadcn.com/) - For reusable UI components
+- #### [Framer-Motion](https://motion.dev/) - For transitions and animations
