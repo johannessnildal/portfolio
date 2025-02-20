@@ -15,9 +15,7 @@ const ToolsPage = () => {
           <h1 className='font-extrabold font-serif text-5xl md:text-6xl lg:text-7xl'>Tools</h1>
           <p className='text-zinc-400 font-light text-md md:text-lg lg:text-xl'>Tools I use to create beautiful, dynamic websites.</p>
         </div>
-      </motion.div>
 
-      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 0.4}}>
         <h1 className='text-center text-3xl text-zinc-800 font-light tracking-wide pt-[100px]'>Languages</h1>
         
         <div className='flex justify-center pt-3'>
@@ -48,9 +46,7 @@ const ToolsPage = () => {
             </div>
           </div>
         </div>
-      </motion.div>
 
-      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 0.4}}>
         <h1 className='text-center text-3xl text-zinc-800 font-light tracking-wide pt-[100px]'>Frameworks</h1>
 
         <div className='flex justify-center pt-3'>
@@ -87,9 +83,7 @@ const ToolsPage = () => {
             </div>
           </div>
         </div>
-      </motion.div>
 
-      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 0.4}}>
         <h1 className='text-center text-3xl text-zinc-800 font-light tracking-wide pt-[100px]'>Auth & Database</h1>
 
         <div className='flex justify-center pt-3'>
@@ -120,9 +114,7 @@ const ToolsPage = () => {
             </div>
           </div>
         </div>
-      </motion.div>
 
-      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 0.4}}>
         <h1 className='text-center text-3xl text-zinc-800 font-light tracking-wide pt-[100px]'>Other</h1>
 
         <div className='flex justify-center pt-3 pb-20'>
