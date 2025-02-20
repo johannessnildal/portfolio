@@ -1,11 +1,9 @@
 import Image from 'next/image'
 import React from 'react'
 
-import { motion } from 'framer-motion';
-
 const ProjectsPage = () => {
   return (
-    <main>
+    <main className='w-full h-full'>
       <section>
         <div className='text-center flex flex-col gap-2 max-w-prose mx-auto items-center'>
           <h1 className='font-extrabold font-serif text-5xl md:text-6xl lg:text-7xl'>Projects</h1>
