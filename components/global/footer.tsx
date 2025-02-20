@@ -20,8 +20,9 @@ const Footer = () => {
               <h1 className='font-extrabold font-serif text-xl text-center sm:text-left underline underline-offset-4 decoration-zinc-400 hover:decoration-white decoration-dotted duration-300 ease-in-out'>JohannesS.</h1>
             </Link>
             <p className='text-sm font-light text-zinc-400 text-center sm:text-left'>Welcome to my portfolio, showcasing <br /> my projects and the tools i use!</p>
+              <Button className='dark mt-4 sm:mt-8' variant='outline' asChild><Link href='/about' className='w-fit self-center sm:self-start'>About Me</Link></Button>
           </div>
-          <div className='flex flex-col text-center sm:text-left sm:flex-row gap-10 sm:gap-[100px] md:gap-[140px]'>
+          <div className='flex flex-col text-center sm:text-left sm:flex-row gap-10 sm:gap-[100px] md:gap-[140px] mt-8 sm:mt-0'>
             <div className='flex flex-col gap-3'>
               <Link 
                 href='/projects'
