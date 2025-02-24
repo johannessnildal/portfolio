@@ -30,7 +30,7 @@ const MobileNavBar = () => {
       </SheetTrigger>
       <SheetContent className='dark w-[300px] sm:w-[400px]' side='left'>
         <SheetHeader className='flex items-center'>
-          <SheetTitle className='mt-5 tracking-tight font-extrabold text-xl'>Johannes</SheetTitle>
+          <SheetTitle className='font-extrabold font-serif text-xl underline underline-offset-4 decoration-zinc-400 decoration-dotted'>JohannesS.</SheetTitle>
         </SheetHeader>
       <div className='flex flex-col gap-8 mt-10 items-center justify-center'>
         <Link href='/about'>
@@ -110,7 +110,7 @@ const MobileNavBar = () => {
           <Button asChild className='dark m-auto' variant='default'>
             <Link className='gap-2' href='https://github.com/johannessnildal'>
               <Github size='16' />
-              <p>Contact Me</p>
+              <p>My GitHub</p>
             </Link>
           </Button>
       </div>

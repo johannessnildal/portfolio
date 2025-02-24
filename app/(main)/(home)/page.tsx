@@ -38,9 +38,14 @@ const HomePage = () => {
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
-          <span className='font-extrabold font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl'>
-            I create <span className="italic">meaningful</span>
-          </span>
+            <div className="flex flex-col sm:flex-row gap-2 text-center sm:text-left justify-center">
+              <span className='font-extrabold font-serif text-5xl md:text-6xl lg:text-7xl'>
+              I create
+              </span>
+              <span className="italic font-extrabold font-serif text-5xl md:text-6xl lg:text-7xl">
+              meaningful
+              </span>
+            </div>
           <h1>
             <span className='font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl'>
               <DescriptionCarousel />
