@@ -25,7 +25,7 @@ const HomePage = () => {
             <Tooltip>
               <TooltipTrigger>
                 <div className="flex flex-row gap-2 text-center justify-center items-center">
-                  <Link href='https://github.com/johannessnildal' className="text-sm sm:text-base md:text-lg text-transparent bg-clip-text bg-gradient-to-r from-muted/60 via-muted/90 to-muted/60" target="blank">
+                  <Link href='https://github.com/johannessnildal' className="text-sm sm:text-base md:text-lg text-transparent bg-clip-text bg-gradient-to-r from-muted/70 via-muted/90 to-muted/70" target="blank">
                     @johannessnildal
                   </Link>
                 </div>
@@ -38,9 +38,9 @@ const HomePage = () => {
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
-          <h1 className='font-extrabold font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl'>
-            I create meaningful
-          </h1>
+          <span className='font-extrabold font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl'>
+            I create <span className="italic">meaningful</span>
+          </span>
           <h1>
             <span className='font-serif text-2xl sm:text-3xl md:text-4xl lg:text-5xl'>
               <DescriptionCarousel />
