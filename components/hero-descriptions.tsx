@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const descriptions = ["Websites", "Web Apps", "Experiences", "Interfaces"];
 
@@ -17,17 +18,18 @@ const DescriptionCarousel: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center">
-      {descriptions.map((description, index) => (
-          <span
-            key={index}
-            className={`transition-opacity duration-300 ease-in-out${
-              index === currentIndex ? 'opacity-100 block' : 'opacity-0 hidden'
-            }`}
-            style={{ top: 0, left: 0 }}
-          >
-            {description}
-          </span>
-      ))}
+      <AnimatePresence mode='wait'>
+        <motion.span
+          key={currentIndex}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.3 }}
+          className="transition-opacity text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-300 to-blue-500"
+        >
+          {descriptions[currentIndex]}
+        </motion.span>
+      </AnimatePresence>
     </div>
   );
 };
