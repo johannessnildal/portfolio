@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const descriptions = ["Websites", "Web Apps", "Experiences", "Interfaces"];
+const descriptions = ["Websites", "Web Apps", "Experiences", "Interfaces", "Interactions", "Designs"];
 
 const DescriptionCarousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
