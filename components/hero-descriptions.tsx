@@ -25,7 +25,7 @@ const DescriptionCarousel: React.FC = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
-          className="transition-opacity text-transparent bg-clip-text bg-gradient-to-r from-muted/70 via-muted/90 to-muted/70"
+          className="-z-10 transition-opacity text-transparent bg-clip-text bg-gradient-to-r from-muted/70 via-muted/90 to-muted/70"
         >
           {descriptions[currentIndex]}
         </motion.span>
