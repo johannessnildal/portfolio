@@ -18,7 +18,8 @@ import {
 
 const HomePage = () => {
   return (
-    <section className="w-full h-full">
+    <main>
+    <section>
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 0.7}}>
         <div className={'text-center flex flex-col gap-3'}>
           <TooltipProvider>
@@ -78,7 +79,9 @@ const HomePage = () => {
           </Button>
         </div>
       </motion.div>
+    </section>
 
+    <section>
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{duration: 0.4}}>
         <div className="mt-16 sm:mt-20 relative overflow-hidden flex justify-center">
           <div className="w-[90%] max-w-[1200px] aspect-[1500/780] relative">
@@ -95,6 +98,7 @@ const HomePage = () => {
       </motion.div>
 
     </section>
+    </main>
   )
 }
 
